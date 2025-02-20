@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+    color: black;
+}
+
+.content {
+    justify-items: center;
+    padding: 3vh;
+}
+
+.normal {
+    width: 70%;
+    text-align: justify;
+    padding: 2vh;
+    font-size: 1.1em;
+}
+
+.warna {
+    color: #0C307C;
+}
+
+.center {
+    width: 70%;
+    text-align: center;
+    padding: 2vh;
+    font-size: 1.1em;
+}
+
+.sejarah {
+    padding: 2vh;
+    width: 75%;
+    border: 2px solid #0C307C;
+    border-radius: 5px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.visi {
+    padding: 2vh;
+    width: 75%;
+    border: 2px solid #0C307C;
+    border-radius: 5px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.misi {
+    padding: 2vh;
+    width: 75%;
+    border: 2px solid #0C307C;
+    border-radius: 5px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
