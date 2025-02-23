@@ -26,6 +26,7 @@
 .menu {
     display: flex;
     align-items: center;
+    position: relative; /* Needed for positioning the hamburger menu */
 }
 
 .menu ul {
@@ -45,6 +46,18 @@
     font-size: 1.3em;
     color: #0C307C;
     font-weight: bold;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-icon {
+    display: none; /* Hide by default on larger screens */
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#hamburger {
+    display: none; /* Hide the checkbox */
 }
 
 footer {
@@ -107,4 +120,63 @@ footer p {
 
 .bottom {
     padding: 2vh;
+}
+
+@media (max-width: 780px) { /* Adjust breakpoint as needed */
+    * {
+        font-size: 0.95em;
+    }
+
+    .menu ul {
+        display: none; /* Hide the menu on smaller screens */
+        flex-direction: column; /* Stack the menu items vertically */
+        position: absolute;
+        top: 60px; /* Position below the navbar */
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        display: block; /* Make the links fill the width */
+    }
+
+    .hamburger-icon {
+        display: block; /* Show the hamburger icon */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #hamburger:checked + nav ul {
+        display: flex;
+    }
+
+    .firstFooter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maps {
+        width: 97%;
+        height: 50vh;
+    }
+
+    .about {
+        width: 80%;
+        margin: auto;
+    }
+
+    .firstFooter h4 {
+        font-size: 1.5em;
+    }
+
+    .social-icons img {
+        width: 5vh;
+    }
 }
