@@ -38,6 +38,10 @@
     margin-bottom: 3vh;
 }
 
+img {
+    width: 95%;
+}
+
 .visi {
     padding: 2vh;
     width: 75%;
